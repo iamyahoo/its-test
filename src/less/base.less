@@ -104,7 +104,7 @@ html {
     font-family: @font-family_1;
     font-size: @text_default_lg;
     line-height: @line-height_default_lg;
-    min-width: 100%;
+    min-width: @total-width_sm;
     height: 100%;
     background-color: @color-white;
 }
@@ -210,23 +210,6 @@ textarea {
 }
 
 @media (max-width: @total-width_md) {
-
-    html {
-        box-sizing: border-box;
-        font-family: @font-family_1;
-        font-size: @text_default_md;
-        line-height: @line-height_default_md;
-        min-width: 100%;
-        height: 100%;
-        background-color: @color-white;
-    }
-
-    body {
-        position: relative;
-        height: 100%;
-        margin: 0;
-    }
-
     h1 {
         margin: 20px 0;
         font-family: @font-family_1_bold;
@@ -251,7 +234,7 @@ textarea {
         color: @color-black;
     }
 
-    h3 {
+    h4 {
         margin: 20px 0;
         font-family: @font-family_2_bold;
         font-size: @h4-size_md;
@@ -318,22 +301,7 @@ textarea {
 }
 
 @media (max-width: @total-width_sm) {
-    html {
-        box-sizing: border-box;
-        font-family: @font-family_1;
-        font-size: @text_default_sm;
-        line-height: @line-height_default_sm;
-        min-width: 100%;
-        height: 100%;
-        background-color: @color-white;
-    }
-
-    body {
-        position: relative;
-        height: 100%;
-        margin: 0;
-    }
-
+ 
     h1 {
         margin: 20px 0;
         font-family: @font-family_1_bold;

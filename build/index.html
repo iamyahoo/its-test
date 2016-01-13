@@ -5,6 +5,7 @@
 	<meta name="Robots" content="NOINDEX, NOFOLLOW">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="image/png" href="favicon.ico">
 	<title>Реновация</title>
 </head>
 <body>
@@ -14,7 +15,13 @@
 <!-- page-header start -->
 	<header class="page-header">
 		<div class="header-wrapper">
-			<a href="#" class="header-logo">Городская программа<br> Развитие застроенных территорий Санкт-Петербурга</a>
+			<div class="header-logo-wrapper">
+				<a href="#" class="header-logo">Городская программа<br> Развитие застроенных территорий Санкт-Петербурга</a>
+				<div class="header-menu__opener-icon">
+				<span></span>
+			</div>
+
+			</div>
 			<div class="header-part">
 				<div class="header-search">
 					<input id="header-search__input" class="header-search__input" name="header-search__input" type="text" placeholder="Проверить дом по адресу">
@@ -110,7 +117,7 @@
 			<p class="footer-title">Входит ли мой дом в программу реновации</p>
 			<div class="footer-search">
 				<input class="footer-search__input" name="footer-search__input" type="text" placeholder="Название улицы, номер дома, корпус">
-				<button id="footer-search__btn" class="footer-search__btn"></button>
+				<button id="footer-search__btn" class="footer-search__btn">Найти</button>
 			</div>
 			<div class="footer-links-wrapper">
 				<div class="footer-links__item">
@@ -154,12 +161,12 @@
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<div class="footer-bottom__copyright">&copy; 2015 РЗТ</div>
 				<div class="footer-bottom__social-btns">
-					<a href="">Вконтакте</a>
-					<a href="">Твиттер</a>
-					<a href="">Ютуб</a>
+					<a href="" class="footer-bottom__social-btn">Вконтакте</a>
+					<a href="" class="footer-bottom__social-btn">Твиттер</a>
+					<a href="" class="footer-bottom__social-btn">Ютуб</a>
 				</div>
+				<div class="footer-bottom__copyright">&copy; 2015 РЗТ</div>
 			</div>
 		</div>
 	</footer>
@@ -167,7 +174,7 @@
 
 	<!-- scripts start -->
 	<script type="text/javascript" src="js/libs/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<!-- scripts end -->
 

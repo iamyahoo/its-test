@@ -54,9 +54,13 @@ $(document).ready(function(){
 
 	$(function (headerMenuOpen) {
 		var headerMenuIcon = $('.header-menu__opener-icon');
+		var rocket = $('.rocket');
+		var boom = $('.boom');
 
 		$(headerMenuIcon).click(function() {
     		$(this).toggleClass('header-menu__opener-icon_active');
+    		$('.rocket').toggleClass('rocket_active');
+    		$('.boom').toggleClass('boom_active');
     	});
     });
 

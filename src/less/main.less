@@ -603,6 +603,11 @@
 }
 // footer styles end
 
+@media (min-width: 1350px) {
+	.footer-search {
+		max-width: 1000px;
+	}
+}
 
 // media queries
 @media (max-width: 1024px) {
@@ -643,6 +648,7 @@
 	.header-nav {
 		float: none;
 	}
+
 
 	.page-menu__item-wrapper {
 		height: ~"calc(100vh - 116px - 90px)";
@@ -723,18 +729,8 @@
 @media (max-width: 450px) {
 	.header-wrapper,
 	.footer-wrapper {
-		min-width: 320px;
-		height: auto;
 		padding: 15px 10px;
 	}	
-
-	.page-menu-wrapper {
-		padding: 0;
-	}
-
-	.page-menu__opener {
-		width: 100%;
-	}
 
 	.header-logo {
 		width: 240px;
@@ -744,6 +740,10 @@
 
 	.header-menu__opener-icon {
 		margin: 0;
+	}
+
+	.page-footer {
+		width: 99%;
 	}
 
 	.footer-title {
@@ -772,4 +772,76 @@
 		min-width: 320px;
 	}
 
+}
+
+//fun 
+.rocket {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url(../img/design/rocket.png) center center no-repeat;
+    background-size: 100%;
+    z-index: 40;
+    transform: rotate(-90deg) translate(700px, 100%);
+    transform-origin: 50% 70%;
+
+}
+
+.rocket_active {
+    animation-name: launch;
+    animation-duration: 1.8s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes launch {	
+
+	100% {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		transform: rotate(-170deg) scale(.4);
+	}
+}
+
+.boom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 300px;
+    height: 250px;
+    background: url(../img/design/boom.png) center center no-repeat;
+    background-size: 100%;
+	transform: scale(0) translateY(50px);
+	transform-origin: 50% 50%;
+    z-index: 50;
+}
+
+.boom_active {
+    animation-name: boom;
+    animation-duration: .5s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes boom {
+	0% {
+		transform: scale(.5) translateY(50px);
+		opacity: 1;
+	}
+	80% {
+		transform: scale(1.5) rotate(-20deg) translateY(50px);
+		opacity: 1;
+	}
+	100% {
+		// transform: scale(100) ;
+		opacity: 0;
+		visibility: hidden;
+	}
 }
